@@ -8,12 +8,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/flickity.min.css">
   </head>
-  </head>
   <body>
     <main class="container">
 <!-- nav bar & logo -->
-  <!-- sticky header -->
-      <div class="red-room-background">
+      <section class="scroll red-room-background">
         <header>
           <div class="branding">
             <div class="logo">
@@ -26,61 +24,59 @@
           </div>
           <nav class="nav-bar">
             <ul class="nav-bar-2">
-              <li class="nav-bar-item">Our Story</li>
-              <li class="nav-bar-item">Packages</li>
-              <li class="nav-bar-item">Facilities</li>
-              <li class="nav-bar-item">Plan Your Trip</li>
+              <a href="#story" class="nav-bar-item">Our Story</a>
+              <a href="#packages" class="nav-bar-item">Packages</a>
+              <a href="#facilities" class="nav-bar-item">Facilities</a>
+              <a href="#trip" class="nav-bar-item">Plan Your Trip</a>
             </ul>
           </nav>
         </header>
 <!-- Homescreen -->
   <!-- Will have large photo background; just a quote; no real information-->
-        <section class="homescreen">
+        <div class="homescreen">
           <div class="homescreen-all-text">
             <h2 class="homescreen-h2">Experience the difference.</h2>
-            <p class="homescreen-blurb"> orem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis
-              pulvinar ultricies. Maecenas suscipit, magna nec tristique consequat,
-              nisi augue ultrices libero, sed cursus lacus quam eget elit. </p>
+            <p class="homescreen-blurb"> We're more than a spa. We're the future.
+              Whether you're seeking treatment for wrinkles, arthritis, balding, or general mortality,
+              LifeForce is committed to helping baby boomers enjoy life to the fullest.</p>
           </div>
-        </section>
-      </div>
+        </div>
+        <img class="arrow-down" src="images/down-arrow.png" alt="scroll down">
+      </section>
 <!--Our Story: Basic Pitch-->
   <!-- Solid background; simple -->
-        <section class="our-story">
-          <div class="our-story-all-text">
-            <hr>
-            <h2 class="our-story-h2"> First sentence bold tk tk tk </h2>
-            <hr>
-            <p class="our-story-blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis
-              pulvinar ultricies. Maecenas suscipit, magna nec tristique consequat,
-              nisi augue ultrices libero, sed cursus lacus quam eget elit. Vestibulum
-              ante lacus, aliquet ac convallis eu, hendrerit eu mi. Aliquam vulputate
-              eros sed massa dignissim finibus.
-            </p>
-            <div class="red-brushstroke">
-              <img class="red-brushstroke-image" src="images/dark-red-stroke.png" alt="brushstroke">
-            </div>
-        </section>
-      </div>
-<!-- Packages-->
-      <section class="packages-section">
-        <div class="packages-content">
-          <h2 class="packages-h2">Our Packages<h2>
-          <p class="packages-content-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis
-            pulvinar ultricies. Maecenas suscipit, magna nec tristique consequat,
-            nisi augue ultrices libero, sed cursus lacus quam eget
+      <section id="story" class="scroll our-story">
+        <div class="our-story-all-text">
+          <hr>
+          <h2 class="our-story-h2"> Millennials killed golf. But they won't kill you. </h2>
+          <hr>
+          <p class="our-story-blurb">On the contrary, at LifeForce we operate under one simple principle:
+            the power of young blood to relax, rejuevenate, and restore. That's why we pair each of our
+            patrons with the perfect Millennial, based on eye and hair color, weight, and blood type.
           </p>
-          <div class="packages-button-container">
-            <button class="button packages-button">Learn More</button>
+          <div class="red-brushstroke">
+            <img class="red-brushstroke-image" src="images/dark-red-stroke.png" alt="brushstroke">
           </div>
+      </section>
+<!-- Packages-->
+      <section id="#packages" class="scroll packages-section">
+        <div class="packages-content">
+          <h2 class="packages-h2">Our Packages</h2>
+          <p class="packages-content-text"> From simple face masks to full on blood baths,
+          our unique offerings are easily tailored to suit your specific needs. Choose from
+          one of our three relaxation packages, or speak with one of our blood therapists
+          to customize your plan. </p>
+                <!-- <div class="packages-button-container">
+                  <button class="button packages-button">Learn More</button>
+                </div> -->
         </div>
       </section>
 <!--Packages: Part 2 - LEARN MORE -->
   <!--Section will appear when press the packages button -->
-      <section class="learn-more hidden">
+      <section class="scroll learn-more">
         <div class="learn-more-packages-container">
           <div class="package package1">
-            <p class="package-pre-header"> Package 1: </p>
+            <p class="package-pre-header"> STANDARD: </p>
             <h2 class="package-list-h2">Touch Up</h2>
             <ul class="package1-list">
               <li class="package1-list-item"> tktktktktktktktktktk </li>
@@ -89,7 +85,7 @@
             </ul>
           </div>
           <div class="package package2">
-            <p class="package-pre-header"> Package 2: </p>
+            <p class="package-pre-header"> COMFORT: </p>
             <h2 class="package-list-h2">ReJuevenate</h2>
             <ul class="package2-list">
               <li class="package2-list-item"> tktktktkt </li>
@@ -98,7 +94,7 @@
             </ul>
           </div>
           <div class="package package3">
-            <p class="package-pre-header"> Deluxe Package: </p>
+            <p class="package-pre-header"> PREMIUM: </p>
             <h2 class="package-list-h2">The Keanu</h2>
             <ul class="package3-list">
               <li class="package3-list-item"> tktktktktktktktktktk </li>
@@ -107,15 +103,12 @@
             </ul>
           </div>
         </div>
-        <div class="see-less-container">
-          <button class="button see-less-button">See Less</button>
-        </div>
+          <!-- <div class="see-less-container hidden">
+            <button class="button see-less-button">See Less</button>
+          </div> -->
       </section>
 <!--Facilities -->
-      <section class="facilities">
-        <div class= "facilities-image-container">
-          <img class="facilities-image" src="images/facilities.jpg" alt="massage">
-        </div>
+      <section id="facilities" class="scroll facilities">
         <div class="facilities-all-text">
           <h2 class="facilities-h2"> Our Facilities</h2>
           <p class="facilities-blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis
@@ -124,42 +117,35 @@
             ante lacus, aliquet ac convallis eu, hendrerit eu mi. Aliquam vulputate
             eros sed massa dignissim finibus.
           </p>
-          <div class="facilities-button-container">
-            <button class="button facilities-button">See Photo Gallery</button>
-          </div>
-        </div>
-      </section>
-<!-- CAROUSEL -->
-      <section class="photo-gallery-container hidden">
-        <div class="x-button-container x-button-container2">
-          <button class="x-button x-button2">x</button>
         </div>
         <div class="carousel-container">
-          <div class="carousel">
-            <div class="gallery-item gallery-item-1">
-              <img class="gallery-image" src="images/sauna.jpg" alt="Baby boomers enjoy a sauna.">
-            </div>
-            <div class="gallery-item gallery-item-2">
-              <img class="gallery-image" src="images/wine.jpeg" alt="Relaxation chambers include complementary drinks.">
-            </div>
-            <div class="gallery-item gallery-item-3">
-              <img class="gallery-image gallery-image-3" src="images/give-blood.jpg" alt="A happy milennial gives blood.">
-            </div>
-            <div class="gallery-item gallery-item-4">
-              <img class="gallery-image" src="images/blood-pool2.jpg" alt="Take a dip in the blood pool!">
-            </div>
-            <div class="gallery-item gallery-item-5">
-              <img class="gallery-image" src="images/floating.jpg" alt="Submerge.">
+            <div class="carousel">
+              <div class="gallery-item gallery-item-1">
+                <img class="gallery-image" src="images/sauna.jpg" alt="Baby boomers enjoy a sauna.">
+              </div>
+              <div class="gallery-item gallery-item-2">
+                <img class="gallery-image" src="images/wine.jpeg" alt="Relaxation chambers include complementary drinks.">
+              </div>
+              <div class="gallery-item gallery-item-3">
+                <img class="gallery-image gallery-image-3" src="images/give-blood.jpg" alt="A happy milennial gives blood.">
+              </div>
+              <div class="gallery-item gallery-item-4">
+                <img class="gallery-image" src="images/blood-pool2.jpg" alt="Take a dip in the blood pool!">
+              </div>
+              <div class="gallery-item gallery-item-5">
+                <img class="gallery-image" src="images/floating.jpg" alt="Submerge.">
+              </div>
             </div>
           </div>
-        </div>
       </section>
 <!--Plan Your Trip-->
-      <section class="plan-your-trip">
+      <section id="trip" class="scroll plan-your-trip">
         <div class="location">
           <div class="location-content">
             <h2 class="visit-us-h2">Visit Us</h2>
-            <p class=location-text> Blah blah blah blah </p>
+            <p class="location-text"> Blah blah blah blah </p>
+            <div class="map" id="googleMap">
+            <div>
           </div>
           <div class="map-container">
           </div>
