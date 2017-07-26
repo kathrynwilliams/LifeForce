@@ -71,6 +71,37 @@ header {
   opacity: .4;
 }
 
+@media only screen and (max-width: 750px) {
+
+    header {
+      flex-direction: column;
+    }
+
+    .branding {
+      justify-content: center;
+    }
+
+    .lifeforce {
+      font-size: 36px;
+      margin: 0;
+    }
+
+    .subtitle {
+      display:none;
+    }
+
+    .logo-image {
+        display: none;
+    }
+    .nav-bar{
+      justify-content: center;
+    }
+    .nav-bar-item {
+      font-size: 14px;
+      margin: 0px 5px;
+    }
+}
+
 .arrow-down {
 animation: bouncing 1s infinite ease-in-out;
 height: 60px;
@@ -129,6 +160,13 @@ opacity: .6;
   margin: 10px 0;
 }
 
+@media only screen and (max-width: 650px) {
+  .red-room-background{
+    background-size: auto;
+  }
+}
+
+
 /*************/
 /* Our Story */
 /*************/
@@ -144,6 +182,7 @@ opacity: .6;
 .our-story-all-text {
   padding-bottom: 30px;
   width: 700px;
+  max-width: 100%;
 }
 
 .our-story-h2 {
@@ -174,6 +213,7 @@ hr {
   padding-top: 50px;
   opacity: .7;
   width: 720px;
+  max-width: 100%;
 }
 
 /************/
@@ -194,9 +234,10 @@ hr {
 
 .packages-content {
   background-color: white;
-  border-radius: 25px;
-  padding: 20px;
+  border-radius: 50px;
+  padding: 50px;
   width: 900px;
+  max-width: 70%;
 }
 
 .packages-h2{
@@ -204,7 +245,7 @@ hr {
   font-size: 50px;
   font-weight: 400;
   margin: 0;
-  padding-top: 10px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -217,30 +258,9 @@ hr {
   text-align: center;
 }
 
-          /*  .packages-button-container {
-              padding: 20px 20px 0;
-              text-align: center;
-            }
-
-           .button {
-            border-radius: 25px;
-            font-family: 'Work Sans', sans-serif;
-            font-weight: 200;
-            color: white;
-            font-size: 20px;
-            background-color: #5B2E48;
-            padding: 10px 20px;
-            text-decoration: none;
-          }
-
-          .button:hover {
-            background-color: #E25656;
-            cursor: pointer;
-            text-decoration: none;
-          } OLD BUTTON */
 
 /***************/
-/* LEARN MORE */
+/* PACKAGES 2 */
 /**************/
 
 .learn-more {
@@ -248,7 +268,6 @@ hr {
   background-size: cover;
   background-attachment: fixed;
   color: black;
-  height:450px;
   padding: 100px
 }
 
@@ -281,9 +300,37 @@ hr {
   margin: 0;
 }
 
-.see-less-container {
-  text-align: center;
-  padding: 20px;
+.package-list-item {
+  padding: 5px 0;
+}
+
+.package-img {
+  width: 70%;
+  padding: 0 15%;
+}
+
+@media only screen and (max-width: 650px) {
+  .learn-more {
+    padding: 0;
+  }
+
+  .learn-more-packages-container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .package-img {
+    display: none;
+  }
+
+  .package-pre-header {
+    font-size: 14px;
+  }
+
+  .package-list-h2 {
+    font-size: 24px;
+  }
 }
 
 /***************/
@@ -338,37 +385,122 @@ hr {
   text-align: justify;
 }
 
-      /* .facilities-button-container{
-        padding: 20px 20px 0 0;
-      } OLD BUTTON */
+@media only screen and (max-width: 750px) {
+  .facilities-h2 {
+    font-size: 24px;
+    padding-top: 20px;
+  }
 
-        /* .x-button-container {
-          background-color: white;
-          height: 50px;
-          text-align: right;
-        }
+  .facilities-blurb {
+    font-size: 18px;
+  }
 
-        .x-button {
-          background-color: #5B2E48;
-          border-radius: 80px;
-          color: white;
-          margin: 5px 15px 0 0;
-        }
-
-        .x-button:hover {
-          cursor: pointer;
-        } OLD BUTTON */
-
-/******************/
-/* PLAN YOUR TRIP*/
-/*****************/
-
-.plan-your-trip {
-  background-color: #5B2E48;
-  height: 650px;
-  width: 100%;
+  .facilities {
+    margin: 50px;
+  }
 }
 
-.location-content {
+/**************/
+/* CONTACT US*/
+/*************/
+
+.contact-us {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  font-family: "Work Sans";
+  justify-content: space-around;
+  height: 650px;
+}
+
+.contact-us-boomers {
+  padding-left: 40px;
+  width: 35%;
+}
+
+.contact-us-h2 {
+  font-family: "Work Sans";
+  font-weight: 600;
+}
+
+.contact-us-blurb {
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.email-us, .call-us {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.email-icon, .phone-icon {
+  height: 40px;
+  margin: 0;
+  width: 40px;
+}
+
+.email-address, .phone-number {
+  padding-left: 10px;
+}
+
+.visit-us {
+  border-top: 1px solid black;
+  padding-top: 10px;
+  margin-top: 20px;
+  width: 80%;
+}
+
+.address {
+  margin: 0;
+}
+
+.contact-us-mil {
+  background-image: url("../images/red-background.jpg");
+  background-size: cover;
+  border-radius: 50px;
   color: white;
+  padding: 30px;
+  position: relative;
+  margin-right: 40px;
+  width: 40%;
+}
+
+.mil-blurb {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.mil-h2 {
+  font-size: 20px;
+}
+
+input {
+  margin: 5px 0;
+}
+
+button {
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 50px;
+  padding: 5px 10px;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+/* .kale {
+  position: absolute;
+  width: 50%;
+  top: -100px;
+} TO ADD LATER */
+
+@media only screen and (max-width: 750px) {
+  .contact-us-mil{
+    display: none;
+  }
+  .contact-us-boomers {
+    padding-bottom: 20%;
+    width: 70%;
+  }
 }

@@ -7,11 +7,15 @@
     <link href="https://fonts.googleapis.com/css?family=Sacramento|Work+Sans:200,400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/flickity.min.css">
+<!-- Audio -->
+    <audio src="audio/spa-music.m4a" autoplay="autoplay" loop="loop"></audio>
   </head>
   <body>
     <main class="container">
-<!-- nav bar & logo -->
+<!--background behind nav and homescreen -->
+  <!-- SECTION 0 -->
       <section class="scroll red-room-background">
+<!-- nav bar & logo -->
         <header>
           <div class="branding">
             <div class="logo">
@@ -24,17 +28,18 @@
           </div>
           <nav class="nav-bar">
             <ul class="nav-bar-2">
-              <a href="#story" class="nav-bar-item">Our Story</a>
+              <a href="#story" class="nav-bar-item">About Us</a>
               <a href="#packages" class="nav-bar-item">Packages</a>
               <a href="#facilities" class="nav-bar-item">Facilities</a>
-              <a href="#trip" class="nav-bar-item">Plan Your Trip</a>
+              <a href="#trip" class="nav-bar-item">Contact Us</a>
             </ul>
           </nav>
         </header>
 <!-- Homescreen -->
-  <!-- Will have large photo background; just a quote; no real information-->
+  <!-- Main part of landing section -->
         <div class="homescreen">
           <div class="homescreen-all-text">
+            <!-- With more time, I'd like to make this text fade in when you open the site-->
             <h2 class="homescreen-h2">Experience the difference.</h2>
             <p class="homescreen-blurb"> We're more than a spa. We're the future.
               Whether you're seeking treatment for wrinkles, arthritis, balding, or general mortality,
@@ -43,8 +48,8 @@
         </div>
         <img class="arrow-down" src="images/down-arrow.png" alt="scroll down">
       </section>
-<!--Our Story: Basic Pitch-->
-  <!-- Solid background; simple -->
+<!--About Us (formerly "Our Story")-->
+  <!-- SECTION 1-->
       <section id="story" class="scroll our-story">
         <div class="our-story-all-text">
           <hr>
@@ -59,65 +64,71 @@
           </div>
       </section>
 <!-- Packages-->
-      <section id="#packages" class="scroll packages-section">
+  <!-- SECTION 2 -->
+      <section id="packages" class="scroll packages-section">
         <div class="packages-content">
           <h2 class="packages-h2">Our Packages</h2>
           <p class="packages-content-text"> From simple face masks to full on blood baths,
           our unique offerings are easily tailored to suit your specific needs. Choose from
           one of our three relaxation packages, or speak with one of our blood therapists
           to customize your plan. </p>
-                <!-- <div class="packages-button-container">
-                  <button class="button packages-button">Learn More</button>
-                </div> -->
         </div>
       </section>
 <!--Packages: Part 2 - LEARN MORE -->
-  <!--Section will appear when press the packages button -->
+  <!--SECTION 3 -->
       <section class="scroll learn-more">
         <div class="learn-more-packages-container">
           <div class="package package1">
             <p class="package-pre-header"> STANDARD: </p>
             <h2 class="package-list-h2">Touch Up</h2>
             <ul class="package1-list">
-              <li class="package1-list-item"> tktktktktktktktktktk </li>
-              <li class="package1-list-item"> tktktktktktktktktktk </li>
-              <li class="package1-list-item"> tktktktktktktktktktk </li>
+              <li class="package-list-item"> Full body massage</li>
+              <li class="package-list-item"> Signature LifeForce facial</li>
+              <li class="package-list-item"> Sauna, spa, and lounge access </li>
+              <li class="package-list-item"> Complementary glass of "wine" </li>
+              <li class="package-list-item"> Wrinkle-free, stress-free guarantee</li>
             </ul>
+            <img class="package-img" src="images/facial.png" alt="Standard">
           </div>
           <div class="package package2">
             <p class="package-pre-header"> COMFORT: </p>
             <h2 class="package-list-h2">ReJuevenate</h2>
             <ul class="package2-list">
-              <li class="package2-list-item"> tktktktkt </li>
-              <li class="package2-list-item"> tktktktktktktktktktk </li>
-              <li class="package2-list-item"> tktktktktktktktktktk </li>
+              <li class="package-list-item"> Full body massage </li>
+              <li class="package-list-item"> Sauna, spa, and lounge access </li>
+              <li class="package-list-item"> Exclusive access to a private tub </li>
+              <li class="package-list-item"> Simple transfusion </li>
+              <li class="package-list-item"> Leaves you feeling, looking, and actually being 5 years younger </li>
             </ul>
+            <img class="package-img" src="images/spa-tub.png" alt="Comfort">
           </div>
           <div class="package package3">
             <p class="package-pre-header"> PREMIUM: </p>
             <h2 class="package-list-h2">The Keanu</h2>
             <ul class="package3-list">
-              <li class="package3-list-item"> tktktktktktktktktktk </li>
-              <li class="package3-list-item"> tktktktktktktktktktk </li>
-              <li class="package3-list-item"> tktktktktktktktktktk </li>
+              <li class="package-list-item"> Unlimited massage therapy </li>
+              <li class="package-list-item"> Sauna, spa, and lounge access </li>
+              <li class="package-list-item"> Complete transfusion </li>
+              <li class="package-list-item"> Half an hour in our sensory deprivation blood chamber</li>
+              <li class="package-list-item"> You will literally stop aging. </li>
             </ul>
+            <img class="package-img" src="images/Keanu.png" alt="Premium">
           </div>
         </div>
-          <!-- <div class="see-less-container hidden">
-            <button class="button see-less-button">See Less</button>
-          </div> -->
       </section>
 <!--Facilities -->
+  <!-- SECTION 4-->
       <section id="facilities" class="scroll facilities">
         <div class="facilities-all-text">
           <h2 class="facilities-h2"> Our Facilities</h2>
-          <p class="facilities-blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis
-            pulvinar ultricies. Maecenas suscipit, magna nec tristique consequat,
-            nisi augue ultrices libero, sed cursus lacus quam eget elit. Vestibulum
-            ante lacus, aliquet ac convallis eu, hendrerit eu mi. Aliquam vulputate
-            eros sed massa dignissim finibus.
+          <p class="facilities-blurb"> LifeForce is an oasis of relaxation in the heart
+            of the Nation's Capitol. From lush, spacious overnight accomodations to tranquil
+            hot springs, our facilities were designed with your comfort and safety in mind. We hope
+            you'll find every inch of our campus as special as you are-- down to each delicately folded towel
+            and unused needle.
           </p>
         </div>
+    <!-- Carosel element-->
         <div class="carousel-container">
             <div class="carousel">
               <div class="gallery-item gallery-item-1">
@@ -139,18 +150,73 @@
           </div>
       </section>
 <!--Plan Your Trip-->
-      <section id="trip" class="scroll plan-your-trip">
-        <div class="location">
-          <div class="location-content">
-            <h2 class="visit-us-h2">Visit Us</h2>
-            <p class="location-text"> Blah blah blah blah </p>
-            <div class="map" id="googleMap">
-            <div>
+  <!-- SECTION 5-->
+      <section id="trip" class="scroll">
+        <div class=contact-us>
+          <div class="contact-us-boomers">
+            <h2 class="contact-us-h2"> CONTACT US</h2>
+            <p class="contact-us-blurb"> Ready to take the next step toward a better life?
+              Contact one of our relaxation specialists to book your stay. Or, stop by our campus,
+              conveniently located in Downtown D.C., to make your appointment in person.
+            </p>
+        <!--List of contact info-->
+            <div class="email-us">
+              <img class="email-icon" src="images/email-icon.png" alt="E-Mail">
+              <p class="email-address"> contact@LifeForce.com </p>
+            </div>
+            <div class="call-us">
+              <img class="phone-icon" src="images/phone-icon.png" alt="Call">
+              <p class="phone-number"> 1-800-666-0000 </p>
+            </div>
+            <div class="visit-us">
+              <p class="address">E Capitol St NE + 1st St NE</p>
+              <p class="address">Washington, DC 20001</p>
+            </div>
           </div>
-          <div class="map-container">
+          <div class="contact-us-mil">
+            <h2 class="contact-us-h2 mil-h2">WORK WITH US</h2>
+            <p class="contact-us-blurb mil-blurb"> Are you a millennial in need
+              of $$$? LifeForce is seeking hardworking self-starters to join
+              our team. We offer competetive benefits including: generous
+              vacation and sick days, refreshing blood-replenishing
+              kale smoothies, and hourly wages slightly higher than your parents made at your age.</p>
+            <p class="contact-us-blurb mil-blurb"> Sound like you? Send us your info in the form below, and we'll get back to you soon.</p>
+            <form class="job-form" action="https://formspree.io/kathrynwilliams109@gmail.com" method="POST">
+              <label for="name">Name</label>
+              <br>
+              <input type="text" id="name">
+              <br>
+              <label for="email">E-Mail Address</label>
+              <br>
+              <input type="email" id="email" name="_replyto">
+              <br>
+              <label for="eyes">Eye Color</label>
+              <br>
+              <input type="text" id="eyes">
+              <br>
+              <label for="weight">Weight</label>
+              <br>
+              <input type="text" id="weight">
+              <br>
+              <label for="blood">Blood Type</label>
+              <br>
+              <select id="select">
+                <optgroup label="Blood Type">
+                  <option value>A + </option>
+                  <option value>A - </option>
+                  <option value>B + </option>
+                  <option value>B - </option>
+                  <option value>AB + </option>
+                  <option value>AB - </option>
+                  <option value>O + </option>
+                  <option value>O - </option>
+                </optgroup>
+              </select>
+              <br>
+              <button type="submit" value="Send">Submit</button>
+            </form>
           </div>
-        </div>
-        <div class="contact-us">
+          <!-- <img class="kale" src="images/kale-smoothie.png" alt="Kale Smoothie"> -->
         </div>
       </section>
     </main>
