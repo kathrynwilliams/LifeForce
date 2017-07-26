@@ -70,7 +70,7 @@ $(document).ready(function(){
   $('.carousel').flickity({
     cellAlign: 'center',
     contain: true,
-    cellSelector: '.gallery-image',
+    cellSelector: '.gallery-image'
   });
 
   /* $('.facilities-button').click( function(){
