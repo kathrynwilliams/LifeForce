@@ -480,7 +480,7 @@ input {
   margin: 5px 0;
 }
 
-button {
+.submit-button {
   background-color: white;
   border: 3px solid black;
   border-radius: 50px;
@@ -489,11 +489,10 @@ button {
   font-weight: 600;
 }
 
-/* .kale {
-  position: absolute;
-  width: 50%;
-  top: -100px;
-} TO ADD LATER */
+.submit-button:hover {
+  cursor: pointer;
+  color: red;
+}
 
 @media only screen and (max-width: 750px) {
   .contact-us-mil{
