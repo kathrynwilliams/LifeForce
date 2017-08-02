@@ -1,5 +1,8 @@
 $(document).ready(function(){
-
+  $(function(){
+    $(".homescreen-all-text").css("display", "none");
+    $(".homescreen-all-text").fadeIn(3000);
+  });
   //Scrollify
   $(function() {
     $.scrollify({
@@ -24,6 +27,11 @@ $(document).ready(function(){
           $(".package1").css("display", "none");
           $(".package2").css("display", "none");
           $(".package3").css("display", "none");
+        };
+        if(section===0){
+          $(".homescreen-all-text").fadeIn(2000);
+        } else if(section!=0){
+          $(".homescreen-all-text").css("display", "none");
         };
       },
   		after:function(index,sections) {
