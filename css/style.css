@@ -398,6 +398,14 @@ hr {
   .facilities {
     margin: 50px;
   }
+
+  .carousel-container{
+    display: none;
+  }
+
+  .facilities-all-text {
+    width: 80%;
+  }
 }
 
 /**************/
